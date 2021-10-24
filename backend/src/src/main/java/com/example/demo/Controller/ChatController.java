@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ChatController {
 
-
     @MessageMapping("/hello")
     @SendTo("/topic/roomId")
     public Message boradCast(Message message){
